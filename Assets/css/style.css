@@ -1,0 +1,157 @@
+/* Apply box-sizing to all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margin and padding for html, body, and wrapper */
+html,
+body,
+.wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif; /* Global font style */
+  margin: 0;
+  padding: 0;
+  background-color: #16414d; /* Dark teal background */
+  color: white; /* Default text color */
+}
+
+/* Wrapper styling */
+.wrapper {
+  padding-top: 150px; 
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Header styling */
+header {
+  background-color: rgba(51, 51, 51, 0.9); /* Semi-transparent dark background */
+  color: white; /* White text color */
+  padding: 20px 0;
+  text-align: center;
+  position: fixed; /* Fix the header at the top */
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* Ensure header stays on top */
+  box-shadow: 0 4px 8px #f4f4f4; /* Light shadow effect */
+}
+
+/* Subheading styling */
+h2 {
+  text-align: center;
+}
+
+/* Card styling */
+.card {
+  background-color: rgba(51, 51, 51, 0.9); /* Semi-transparent dark background */
+  border-radius: 5px;
+  border-width: 1px;
+  box-shadow: 0 4px 8px #f4f4f4; /* Light shadow effect */
+  color: white;
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px 40px;
+}
+
+/* Card header styling */
+.card-header::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: #e7e9eb;
+  height: 2px;
+}
+
+/* Card body styling */
+.card-body {
+  min-height: 100px;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+/* Table cell styling */
+td {
+  text-align: center;
+  border: 4px solid black;
+}
+
+/* Even row background color */
+tbody tr:nth-child(even) {
+  background-color: hsl(223, 64%, 90%);
+  color: #16414d;
+}
+
+/* Card footer styling */
+.card-footer {
+  text-align: center;
+}
+
+/* Card footer styling */
+.card-footer::before {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: #e7e9eb;
+  height: 2px;
+}
+
+.card-footer::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* Button styling */
+.btn {
+  border: none;
+  background-color: hsl(223, 74%, 48%);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
+  color: hsl(0, 0%, 100%);
+  display: inline-block;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 16px 16px 16px 20px;
+  padding: 14px 34px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Disabled button styling */
+button[disabled] {
+  cursor: default;
+  background: #c0c7cf;
+}
+
+/* Float right styling */
+.float-right {
+  float: right;
+}
+
+/* Responsive button styling for smaller screens */
+@media (max-width: 690px) {
+  .btn {
+    font-size: 1rem;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+  }
+}
+
+/* Responsive button styling for smaller screens */
+@media (max-width: 500px) {
+  .btn {
+    font-size: 0.8rem;
+  }
+}

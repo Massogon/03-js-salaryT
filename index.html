@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" /> <!-- Specifies the character encoding for the HTML document -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Ensures proper scaling and sizing on all devices -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" /> <!-- Enables support for older IE versions -->
+  <title>Employee Payroll Tracker</title> <!-- Sets the title of the document displayed in the browser tab -->
+  <link rel="stylesheet" href="./Assets/css/style.css" /> <!-- Links to the external CSS file for styling -->
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Employee Payroll Tracker</h1> <!-- Main heading of the application -->
+    </header>
+    <div class="card">
+      <div class="card-header">
+        <h2>Employee Roster</h2> <!-- Subheading for the employee roster section -->
+      </div>
+      <div class="card-body">
+        <table>
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Salary</th>
+            </tr>
+          </thead>
+          <tbody id="employee-table">
+            <!-- Table body where employee rows will be dynamically inserted -->
+          </tbody>
+        </table>
+      </div>
+      <div class="card-footer">
+        <button id="add-employees-btn" class="btn">Add Employees</button> <!-- Button to trigger adding employees -->
+      </div>
+    </div>
+  </div>
+  <script src="./Assets/js/script.js"></script> <!-- Links to the external JavaScript file for functionality -->
+</body>
+
+</html>
